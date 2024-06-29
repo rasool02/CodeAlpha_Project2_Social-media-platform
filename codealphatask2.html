@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- User Profile -->
+        <div id="profile">
+            <img src="profile.jpg" alt="Profile Picture" id="profile-pic">
+            <h2 id="username">User Name</h2>
+            <button id="follow-btn">Follow</button>
+        </div>
+
+        <!-- Posts -->
+        <div id="posts">
+            <!-- A single post -->
+            <div class="post">
+                <h3 class="post-author">Author</h3>
+                <p class="post-content">This is a post content.</p>
+                <button class="like-btn">Like</button>
+                <button class="comment-btn">Comment</button>
+                <div class="comments">
+                    <p class="comment">This is a comment.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Post Form -->
+        <form id="new-post-form">
+            <textarea id="new-post-content" placeholder="What's on your mind?"></textarea>
+            <button type="submit">Post</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
